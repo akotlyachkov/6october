@@ -1,0 +1,30 @@
+
+<div class="container">
+    <div class="row">
+        <div class="navbar-header pull-left">
+            <a class="navbar-brand" ng-class="{active:brandActive}" href="index">Handicraft Studio</a>
+        </div>
+        <div class="pull-left visible-lg visible-md">
+            <ul class="nav navbar-nav hidden-xs pull-left">
+                <li ng-repeat="nav in navs" ng-class="{active:nav.active}"><a ng-href="{{nav.url}}" ng-bind="nav.name"></a></li>
+            </ul>
+        </div>
+        <div class="pull-right">
+            <span class="m-phone"><i class="fa fa-phone hidden-xs"></i> +7(926)-864-5473</span>
+        </div>
+    </div>
+    <div class="pull-left visible-sm row">
+        <ul class="nav navbar-nav">
+            <li ng-repeat="nav in navs" ng-class="{active:nav.active}">
+                <a ng-href="{{nav.url}}" ng-bind="nav.name"></a>
+            </li>
+        </ul>
+    </div>
+    <div class="navbar-collapse visible-xs row">
+        <a class="m-menu" ng-class="{active:menuActive}" href="menu">
+            <i class="fa fa-bars"></i> Меню
+            <span ng-bind="': ' + selectedMenu.name"></span>
+        </a>
+    </div>
+</div>
+

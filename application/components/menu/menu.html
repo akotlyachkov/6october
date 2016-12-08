@@ -1,0 +1,6 @@
+<div class="container m-menu-bg">
+    <ul class="nav navbar-nav col-xs-12">
+        <li ng-repeat="nav in navs" ng-class="{active:nav.prevActive}"><a ng-href="{{nav.url}}" ng-bind="nav.name"></a>
+        </li>
+    </ul>
+</div>
