@@ -11,8 +11,8 @@
         "release": "gulp release:clean && gulp release:precompile && npm run ngc && npm run build && npm run rollup && npm run es5 && npm run minify && gulp release:inject",
         "release-start": "static build/release",
         "debug": "gulp debug:clean && gulp debug:inject && tsc -p tsconfig-debug.json",
-        "debug-tsc": "tsc -p tsconfig-debug.json",
-        "debug-watch": "tsc -w -p tsconfig-debug.json ",
+        "debug-tsc": "tsc -p tsc.config.debug.json",
+        "debug-watch": "tsc -w -p tsc.config.debug.json",
         "debug-gulp": "gulp debug:inject",
         "debug-start": "static"
     },
@@ -27,9 +27,14 @@
         "@angular/router": "^3.1.0",
         "core-js": "^2.4.1",
         "rxjs": "5.0.0-beta.12",
+        "pug": "^2.0.0-beta6",
+        "helmet": "^2.3.0",
+        "compression": "^1.6.2",
         "rxjs-es": "5.0.0-beta.12",
+        "serve-favicon": "^2.3.2",
         "systemjs": "^0.19.39",
-        "zone.js": "^0.6.23"
+        "zone.js": "^0.6.23",
+        "express": "^4.14.0"
     },
     "devDependencies": {
         "@angular/compiler-cli": "^2.1.0",
@@ -53,6 +58,6 @@
         "rollup-plugin-commonjs": "^5.0.5",
         "rollup-plugin-node-resolve": "^2.0.0",
         "rollup-plugin-uglify": "^1.0.1",
-        "typescript": "^2.0.6"
+        "typescript": "^2.1.0"
     }
 }

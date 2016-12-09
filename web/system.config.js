@@ -24,4 +24,4 @@ System.config({
     }
 });
 
-System.import('build/debug/app/main');
+System.import('main.js');
