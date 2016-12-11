@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="row">
+        <div class="navbar-header pull-left">
+            <a class="navbar-brand" routerLinkActive="active" routerLink="/">Handicraft Studio</a>
+        </div>
+        <div class="pull-left visible-lg visible-md">
+            <ul class="nav navbar-nav hidden-xs pull-left">
+                <li *ngFor="let link of links" routerLinkActive="active"><a routerLink="/{{link.url}}">{{link.name}}</a></li>
+            </ul>
+        </div>
+        <div class="pull-right">
+            <span class="m-phone"><i class="fa fa-phone hidden-xs"></i> +7(926)-864-5473</span>
+        </div>
+    </div>
+</div>
+

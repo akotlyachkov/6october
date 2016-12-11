@@ -3,16 +3,16 @@ var express = require('express'),
     favicon = require('serve-favicon'),
     path = require('path'),
     compression = require('compression'),
-    bodyParser = require('body-parser'),
+    //bodyParser = require('body-parser'),
     app = express(),
     http = require('http'),
     server = http.createServer(app),
     web = require('./web');
 
 app.use(helmet());
-app.use(favicon(path.join(__dirname , 'web/public/favicon/favicon.ico')));
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended: false}));
+app.use(favicon(path.join(__dirname , 'web/favicon/favicon.ico')));
+//app.use(bodyParser.json());
+//app.use(bodyParser.urlencoded({extended: false}));
 app.use(compression());
 
 

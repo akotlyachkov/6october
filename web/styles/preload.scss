@@ -1,0 +1,94 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body.preload {
+    background-image: -webkit-radial-gradient(center top, ellipse farthest-corner, #FFFFFF 0%, #E6E6E6 100%);
+
+}
+
+body.preload #wrap,
+body.preload #footer {
+
+    opacity: 0;
+}
+
+body.preload .my {
+    display: none;
+}
+
+.parent-msg {
+    display: none;
+}
+
+.preload .parent-msg {
+    display: block;
+}
+
+.parent-msg {
+
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: auto;
+}
+
+.progress-data {
+    display: none;
+}
+
+.child-msg {
+    width: 300px;
+    height: 300px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin: -150px 0 0 -150px;
+    text-align: center;
+    /*font-size: 30px;*/
+
+    /*color: #fff;*/
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.3)
+
+}
+
+.icon {
+    width: 100px;
+    height: 100px;
+}
+
+.spinner {
+    display: inline-block;
+    -webkit-animation: anim-rotate 2s infinite linear;
+}
+
+@-webkit-keyframes anim-rotate {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.progress-container {
+    border: 1px solid gray;
+    height: 20px;
+    width: 250px;
+    margin: auto;
+}
+
+.progress-bar {
+    float: left;
+    height: 20px;
+    width: 0%;
+    background-color: #204d74;
+}
+
+.progress-bar {
+
+    transition: width 500ms linear;
+}

@@ -1,6 +1,7 @@
-@import "../css/_chat";
-@import "../components/_components";
+@import "roboto";
+@import "font-awesome";
+@import "variables";
+@import "bootstrap";
+@import "bootstrap-custom";
 
-span {
-    font-weight: bold;
-}
+@import "../application/application";

@@ -3,9 +3,9 @@ import {Component} from "@angular/core";
 
 @Component({
     moduleId: module.id,
-    selector: 'navbar',
-    templateUrl: 'navbar.html'
+    selector: 'application',
+    templateUrl: 'layout.html'
 })
-export class NavbarComponent {
+export class Layout {
 
 }

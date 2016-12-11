@@ -1,3 +1,11 @@
-/**
- * Created by nucle on 09.12.2016.
- */
+import {Component} from "@angular/core";
+
+
+@Component({
+    moduleId: module.id,
+    selector: 'order',
+    templateUrl: 'order.html'
+})
+export class OrderPage {
+
+}

@@ -16,7 +16,7 @@ System.config({
 
     packages: packages,
 
-    paths: {"npm:*": "node_modules/*"},
+    paths: {"npm:*": "/*"}, //node_modules
 
     map: {
         "@angular": "npm:@angular",
@@ -24,4 +24,4 @@ System.config({
     }
 });
 
-System.import('main.js');
+System.import('application/main.js');

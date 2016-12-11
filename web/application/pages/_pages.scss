@@ -1,6 +1,287 @@
-.test {
-    background-color: red;
-    &:hover {
-        background-color: blue;
-    }
+
+body {
+    overflow-y: scroll;
+    font-family: 'Roboto';
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    min-width: 320px;
+}
+
+.index a:hover,
+.index a:focus,
+.index a:active,
+.index a:visited,
+.index a {
+    color: #333;
+    text-decoration: none;
+}
+
+.index > div {
+    margin-bottom: 20px;
+}
+
+.index a:hover .index-icon,
+.index a:hover b {
+    color: #E73938;
+}
+
+.index-icon {
+    width: 60px;
+    padding-right: 15px;
+
+}
+
+.index-icon i {
+    float: left;
+    width: 60px;
+    font-size: 60px;
+
+}
+
+.index-head {
+
+    font-size: 26px;
+}
+
+.index-body {
+
+}
+
+.m-menu {
+    color: #fff;
+    font-size: 20px;
+    margin: 10px 0;
+    padding: 0 10px;
+    cursor: pointer;
+    display: block;
+}
+
+.m-menu.active,
+.m-menu:hover,
+.m-menu:focus {
+    text-decoration: none;
+    color: #E73938;
+    background-color: #fff;
+}
+
+.m-menu-bg {
+    background-color: #1F1F1F;
+    /*padding-left: 15px;*/
+}
+
+#wrap {
+    /*background-color: #fff;*/
+
+}
+#wrap,
+#footer{
+    opacity: 1;
+    /*transition: 2s;*/
+}
+.my{
+    display: block;
+}
+
+.jumbotron {
+
+    padding: 0 15px;
+    height: 300px;
+    margin-bottom: 0;
+    background-image: url(../Img/head1.jpg);
+}
+
+.jumbotron h1,
+.jumbotron p {
+    color: #fff;
+    -ms-text-shadow: 1px 1px 2px black;
+    text-shadow: 1px 1px 2px black;
+}
+
+.jumbotron a {
+    -ms-text-shadow: none;
+    text-shadow: none;
+}
+
+.m-scroll {
+    overflow-y: scroll;
+}
+
+.m-tech img {
+    max-height: 75px;
+}
+
+.m-tech p {
+    clear: both;
+}
+
+.m-phone {
+    font-size: 19px;
+    color: #fff;
+    margin-top: 11px;
+    margin-bottom: 11px;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.avatar-container {
+    position: relative;
+    background-color: #000;
+    /*margin: 20px 0;*/
+    margin: 20px auto;
+    height: 200px;
+    width: 200px;
+
+    /*border-radius: 50%;*/
+    /*border: 3px solid #34495e;*/
+    overflow: hidden;
+}
+
+.avatar-container:hover .avatar {
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+.avatar-container:hover .avatar-description {
+    opacity: 1;
+}
+
+.avatar-description {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    transition: 0.2s;
+    opacity: 0;
+}
+
+.avatar-description h3 {
+    color: #E73938;
+    text-align: center;
+}
+
+.avatar-description p {
+    color: #fff;
+    text-align: center;
+}
+
+.avatar {
+    /*border-radius: 50%;*/
+    transition: 0.2s;
+}
+
+.smooth {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+.info-block {
+    font-size: 20px;
+    font-family: 'Arsenal';
+    padding-bottom: 20px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.info-block h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.info-block b {
+    font-size: 24px;
+    color: #E73938;
+    font-family: 'Boblic';
+}
+
+.info-block strong {
+    color: #E73938;
+}
+
+.info-block li {
+    padding-bottom: 10px;
+}
+
+.line0 {
+}
+
+.line1 {
+    /*height: 700px;*/
+}
+
+.info-item {
+    line-height: 1.5em;
+    padding: 20px 0;
+    font-size: 24px;
+}
+
+.info-block.line1 {
+    /*background-color: #fff7f5;*/
+}
+
+.info-block.line2 {
+    /*background-color: #fef2f0;*/
+}
+
+.my-margin-r10 {
+    margin-right: 10px;
+}
+
+.demo1 {
+    background: url('../Img/demo1-bg.jpg') no-repeat top left;
+}
+
+.demo2 {
+    background: url('../Img/demo2-bg.jpg') no-repeat top left;
+}
+
+.demo1,
+.demo2 {
+}
+
+.demo-block {
+}
+
+.demo-block h2 {
+}
+
+.demo-bg {
+    padding: 40px;
+    color: #ffffff;
+    height: 300px;
+}
+
+.demo-bg a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.demo1 .head {
+    background-color: #000;
+    overflow: hidden;
+}
+
+.demo1 .body {
+    background-color: #CF2C31;
+    overflow: hidden;
+}
+
+.demo1 .head h2 {
+    border-bottom: 1px solid #CF2C31;
+    padding-bottom: 5px;
+}
+
+.demo1 .head h2,
+.demo1 .head p,
+.demo1 .body p {
+    margin: 5px 20px;
+}
+
+.demo1 .body p:first-child {
+    border-bottom: 1px solid #000;
+    margin: 5px 20px 0 20px;
+    padding-bottom: 5px;
+}
+
+.demo-block title {
+    float: left;
 }

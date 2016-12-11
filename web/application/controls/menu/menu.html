@@ -1,0 +1,5 @@
+<div class="container m-menu-bg">
+    <ul class="nav navbar-nav col-xs-12">
+        <li *ngFor="let link of links" routerLinkActive="active"><a routerLink="/{{link.url}}">{{link.name}}</a></li>
+    </ul>
+</div>

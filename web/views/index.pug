@@ -24,14 +24,15 @@ html(lang="en")
         meta( name="theme-color" content="#ffffff")
         title Example
         //- inject:css
-        link(rel="stylesheet", href="/css/styles.css")
+        link(rel="stylesheet", href="/styles/preload.css")
         //- endinject
     body
-        application Loading..
+        application Loading...
         //- inject:js
+        link(rel="stylesheet", href="/styles/styles.css")
         script(src="/zone.js/dist/zone.js")
         script(src="/reflect-metadata/Reflect.js")
         script(src="/systemjs/dist/system.src.js")
-        script(src="/system.js")
+        script(src="/system.config.js")
         //- endinject
 

@@ -23,11 +23,11 @@ gulp.task('debug:html', function () {
 });
 gulp.task('debug:sass', function () {
     return gulp
-        .src(['application/**/*.scss'])
+        .src(['web/styles/**/*.scss'])
         .pipe(sourcemaps.init())
         .pipe(sass())
         .pipe(sourcemaps.write())
-        .pipe(gulp.dest('build/debug'))
+        .pipe(gulp.dest('web/styles'))
 });
 gulp.task('debug:inject', ['debug:html', 'debug:sass'], function () {
     let libs = gulp.src([

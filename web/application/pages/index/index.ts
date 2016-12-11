@@ -3,9 +3,9 @@ import {Component} from "@angular/core";
 
 @Component({
     moduleId: module.id,
-    selector: 'application',
+    selector: 'index',
     templateUrl: 'index.html'
 })
-export class Test {
+export class IndexPage {
 
 }

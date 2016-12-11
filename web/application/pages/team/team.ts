@@ -1,3 +1,11 @@
-/**
- * Created by nucle on 09.12.2016.
- */
+import {Component} from "@angular/core";
+
+
+@Component({
+    moduleId: module.id,
+    selector: 'team',
+    templateUrl: 'team.html'
+})
+export class TeamPage {
+
+}
